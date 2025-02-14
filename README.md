@@ -1,10 +1,10 @@
-# **<h1 style="font-size: 48px; font-weight: bold; text-align: center;">Cincinnati Reds Hackathon 2025</h1>**
+# **<h1 style="font-size: 40px; font-weight: bold; align: center;">Cincinnati Reds Hackathon 2025</h1>**
 
-<p style="font-size: 30px; font-weight: bold; text-align: center;">
+<p align="center" style="font-size: 30px; font-weight: bold;">
   NC State IAA
 </p>
 
-<p style="font-size: 30px; font-weight: bold; text-align: center;">
+<p align="center"; style="font-size: 30px; font-weight: bold; text-align: center;">
   By  
   <a href="https://www.linkedin.com/in/andrew-buelna/" target="_blank"><strong>Andrew Buelna</strong></a>, 
   <a href="https://www.linkedin.com/in/landon-docherty-2a570a24b/" target="_blank"><strong>Landon Docherty</strong></a>, 
@@ -13,13 +13,13 @@
   <a href="https://www.linkedin.com/in/jacobsegmiller/" target="_blank"><strong>Jacob Segmiller</strong></a>
 </p>
 
-<p style="font-size: 30px; font-weight: bold; text-align: center;">
+<p align="center"; style="font-size: 30px; font-weight: bold; text-align: center;">
   February 16th, 2025
 </p>
 
-<div style="text-align: center;">
-  <img src="https://www.kaggle.com/competitions/90638/images/header" alt="Cincinnati Reds Hackathon 2025" />
-</div>
+<p align="center">
+<img src="https://github.com/jacobsegmiller/Cincinnati-Reds-Hackathon-2025/blob/main/header.png?raw=true" width="325" height="205">
+</p>
 
 # **Overview**
 
@@ -77,17 +77,17 @@ Table 1 displays the one-year, two-year, and three-year weights for each batting
 
 **Table 1:** Weights Used for Predicting 2024 Batting Statistics
 
-<center>
-<img src="https://github.com/jacobsegmiller/Cincinnati-Reds-Hackathon-2025/blob/main/hitter-weights.png?raw=true" width="800" height="800">
-</center>
+<p align="center">
+<img src="https://github.com/jacobsegmiller/Cincinnati-Reds-Hackathon-2025/blob/main/hitter-weights.png?raw=true" width="800" height="300">
+</p>
 
 As noted in Table 1, we found that using a weight equal to or greater than 0.50 for 2023 was the most effective across all of the statistics. The same methodology used to predict batting statistics was applied to predicting pitching statistics. We found that all pitching statistics in our models were most accurate when using the same weighting scale across all variables, as shown in Table 2.
 
 **Table 2:** Weights Used for Predicting 2024 Batting Statistics 
 
-<center>
-<img src="https://github.com/jacobsegmiller/Cincinnati-Reds-Hackathon-2025/blob/main/pitcher-weights.png?raw=true" width="800" height="800">
-</center>
+<p align="center">
+  <img src="https://github.com/jacobsegmiller/Cincinnati-Reds-Hackathon-2025/blob/main/pitcher-weights.png?raw=true" width="800" height="125">
+</p>
 
 The weights noted in Table 1 and Table 2 provided us with a 2024 projection for each player in the dataset, which we used to make predictions once we built and selected our final models.
 
@@ -99,9 +99,9 @@ This section presents the results of our XGBoost models, including the variables
 
 Fitting three different models to predict playing time for hitters, starting pitchers, and relief pitchers allowed us to assess which of the selected statistics were most important in projecting playing time for each group. Figure 1 displays the importance of the different variables used as inputs in the XGBoost model for hitters.
 
-<center>
-<img src="https://github.com/jacobsegmiller/Cincinnati-Reds-Hackathon-2025/blob/main/hitter-variable-importance.png?raw=true" width="600" height="600">
-</center>
+<p align="center">
+  <img src="https://github.com/jacobsegmiller/Cincinnati-Reds-Hackathon-2025/blob/main/hitter-variable-importance.png?raw=true" width="550" height="400">
+</p>
 
 **Figure 1:** Variable Importance for Hitters Model
 
@@ -109,9 +109,9 @@ Figure 1 shows that total bases is the most important variable for predicting pl
 
 For the pitcher models, the same variables were used to predict batters faced, but since different models were fit, the variable importance results differ slightly. Figure 2 displays the variable importance for the starting pitchers model.
 
-<center>
-<img src="https://github.com/jacobsegmiller/Cincinnati-Reds-Hackathon-2025/blob/main/pitcher-variable-importance.png?raw=true" width="600" height="600">
-</center>
+<p align="center">
+  <img src="https://github.com/jacobsegmiller/Cincinnati-Reds-Hackathon-2025/blob/main/pitcher-variable-importance.png?raw=true" width="550" height="400">
+</p>
 
 **Figure 2:** Variable Importance for Starting Pitchers Model
 
@@ -119,9 +119,9 @@ Figure 2 shows that similar to hitters, the most important variable for starting
 
 Figure 3 shows the variable importance for the model predicting relief pitcher playing time.   
 
-<center>
-<img src="https://github.com/jacobsegmiller/Cincinnati-Reds-Hackathon-2025/blob/main/relievers-variable-importance.png?raw=true" width="600" height="600">
-</center>
+<p align="center">
+  <img src="https://github.com/jacobsegmiller/Cincinnati-Reds-Hackathon-2025/blob/main/relievers-variable-importance.png?raw=true" width="550" height="400">
+</p>
 
 **Figure 3:** Variable Importance for Relief Pitchers Model
 
@@ -133,9 +133,9 @@ For each of the models, 2021 and 2022 stats were used to train the model with 20
 
 Table 3: Accuracy of All Models for 2023
 
-<center>
-<img src="https://github.com/jacobsegmiller/Cincinnati-Reds-Hackathon-2025/blob/main/rmse-table.png?raw=true" width="600" height="600">
-</center>
+<p align="center">
+  <img src="https://github.com/jacobsegmiller/Cincinnati-Reds-Hackathon-2025/blob/main/rmse-table.png?raw=true" width="600" height="250">
+</p>
 
 According to Table 3, all three models were fairly accurate in their predictions for 2023 playing time. For hitters, the model was off by about 16.11 plate appearances, on average. For pitchers, projections differed by about 15.07 batters faced for starters and 7.88 for relievers, on average.
 
