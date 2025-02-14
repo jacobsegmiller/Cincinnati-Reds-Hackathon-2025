@@ -1,4 +1,4 @@
-# **<h1 style="font-size: 40px; font-weight: bold; align: center;">Cincinnati Reds Hackathon 2025</h1>**
+# **Cincinnati Reds Hackathon 2025**
 
 <p align="center" style="font-size: 30px; font-weight: bold;">
   NC State IAA
